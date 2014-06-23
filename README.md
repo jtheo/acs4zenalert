@@ -17,7 +17,7 @@ Start installing curl:
 * apt-get install curl in debian/ubuntu
 * yum install curl in redhat/centos)
 
-Launch as root or via sudo the script install.sh
+Launch the script install.sh as root or via sudo
 
 
 ## Basic Configuration
