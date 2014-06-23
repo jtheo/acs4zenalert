@@ -11,6 +11,25 @@ fi
 
 echo "Minimal install script"
 echo "Starting with the copy of the scripts"
+read -p "The scripts will be overwritten, should I continue? [y/N]" answer
+
+while true
+do 
+  case $answer in
+    [yY]* ) echo "Ok, I'm starting"
+            break
+            ;;
+
+    [nN]* ) echo "Ok, I'm exiting"
+            exit 255
+            ;;
+
+    *)      echo "Just enter Y or N, please"
+            exit 254
+            ;;
+  esac
+done  
+
 cp -v usr/local/bin/* /usr/local/bin
 
 if [ $? -ne 0 ]
