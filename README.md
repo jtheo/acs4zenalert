@@ -63,4 +63,4 @@ I developed all the script in a Raspberry Pi to have a basic environment and a c
 * ["Raspberry-Pi-Status"](https://github.com/GeekyTheory/Raspberry-Pi-Status)
 
 # Other Lightweight Monitor
-["Linux Dash (in python")](https://github.com/afaqurk/linux-dash)
+["Linux Dash (in php/js")](https://github.com/afaqurk/linux-dash)
