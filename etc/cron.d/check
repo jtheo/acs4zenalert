@@ -1,7 +1,10 @@
 */5 * * * * root /usr/local/bin/check_to_zenalert.sh  /usr/local/bin/check_disk.sh -w 90 -c 95 -f / > /dev/null 2>&1
+*/5 * * * * root /usr/local/bin/check_to_zenalert.sh  /usr/local/bin/check_disk.sh -w 90 -c 95 -f /boot > /dev/null 2>&1
+
 */5 * * * * root /usr/local/bin/check_to_zenalert.sh  /usr/local/bin/check_cpu_mem.sh -w 75 -c 90 -s cpu > /dev/null 2>&1
 */5 * * * * root /usr/local/bin/check_to_zenalert.sh  /usr/local/bin/check_cpu_mem.sh -w 75 -c 90 -s memory > /dev/null 2>&1
 */5 * * * * root /usr/local/bin/check_to_zenalert.sh  /usr/local/bin/check_cpu_mem.sh -w 75 -c 90 -s swap > /dev/null 2>&1
+
 */5 * * * * root /usr/local/bin/check_to_zenalert.sh  /usr/local/bin/check_temp.sh -w 60 -c 70 > /dev/null 2>&1
 
 */5 * * * * root /usr/local/bin/check_to_zenalert.sh  /usr/local/bin/duck.sh > /dev/null 2>&1
